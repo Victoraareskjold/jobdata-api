@@ -1,6 +1,7 @@
 [build]
-  command = "npm run build"
+  command = "bun run build"
   publish = "dist"
+  functions = "netlify-functions"
 
-[dev]
-  framework = "#custom"
+[functions]
+  node_bundler = "bun"  # Bruk Bun som bundler for funksjonene
